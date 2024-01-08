@@ -1,9 +1,19 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
+<script>
+import AppHeader from './components/AppHeader.vue';
+
+
+export default {
+  components: {
+    AppHeader,
+  }
+}
 </script>
 
 <template>
   
+  <AppHeader/>
+
+
 </template>
 
 <style scoped>
