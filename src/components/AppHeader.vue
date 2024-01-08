@@ -67,10 +67,7 @@ export default {
     color: #F8225B;
    
 }
-.color-light-blue {
-    color: #626E8A;
-    font-size: 10px;
-}
+
 .testo {
     margin-top: 120px;
 }
