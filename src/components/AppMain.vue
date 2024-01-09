@@ -67,9 +67,41 @@
             <img src="../../src/assets/img/portfolio2_featured_item-1200x960.jpg" alt="foto dei lavoti recenti 5">
             <img src="../../src/assets/img/portfolio6_featured_item-1200x960.jpg" alt="foto dei lavoti recenti 6">
 
+            <div class="text-center bg-red my-fs-10 text-white py-4">VIEW ALL MY WORK</div>
 
         </div>
 
+        <div class="quotes">
+        
+            <div class="container">
+
+                
+
+                <div class="row text-center d-flex justify-content-center">
+                    <div class="col-9">
+                        <p class="text-center pt-5 my-fs-big">"</p>
+                        <p class="text-white fst-italic">"That's been one of my mantras - focus and simplicity. Since can be harder than complex;you have to work hard to get your thinking clean to make it simple."</p>
+                        <p class="text-white my-fs-10">STEVE JOBS - APPLE</p>
+                    </div>
+                </div>
+
+                <div class="row text-center d-flex justify-content-center py-5">
+                    <div class="col-8">
+                        <p class="text-white">TRUSTED BY GLOBAL BRANDS</p>
+                        <div class="logos d-flex justify-content-between py-3">
+                            <img src="../../src/assets/img/logo_demo_1.png" alt="Logo lorem">
+                            <img src="../../src/assets/img/logo_demo4.png" alt="Logo American">
+                            <img src="../../src/assets/img/Vector_Smart_Object-1.png" alt="Logo lorem">
+                            <img src="../../src/assets/img/Vector_Smart_Object-2.png" alt="Logo lorem">
+                            <img src="../../src/assets/img/Vector_Smart_Object-3.png" alt="Logo lorem">
+
+                        </div>
+                    </div>
+                </div>
+
+               
+            </div>
+        </div>
 
 
 
@@ -132,5 +164,28 @@ export default {
     .recent-work {
         background-color: #96C577;
     }
+    .recent-work img {
+    width: 50%;
+    }
 
+    .bg-red {
+        background-color: #F9225B;
+    }
+
+    .quotes{
+        background-image: url(../../src/assets/img/testimonial_bkgd.jpg);
+        height: 550px;
+        background-position: center; 
+        background-size: cover;
+        position: relative;
+    }
+
+    .quotes .my-fs-big {
+        font-size: 112px;
+        color: #F9225B ;
+    }
+
+    .quotes p {
+        font-size: 12px;
+    }
 </style>
