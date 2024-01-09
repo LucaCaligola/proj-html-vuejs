@@ -74,11 +74,9 @@
         <div class="quotes">
         
             <div class="container">
-
-                
-
                 <div class="row text-center d-flex justify-content-center">
                     <div class="col-9">
+
                         <p class="text-center pt-5 my-fs-big">"</p>
                         <p class="text-white fst-italic">"That's been one of my mantras - focus and simplicity. Since can be harder than complex;you have to work hard to get your thinking clean to make it simple."</p>
                         <p class="text-white my-fs-10">STEVE JOBS - APPLE</p>
@@ -94,13 +92,63 @@
                             <img src="../../src/assets/img/Vector_Smart_Object-1.png" alt="Logo lorem">
                             <img src="../../src/assets/img/Vector_Smart_Object-2.png" alt="Logo lorem">
                             <img src="../../src/assets/img/Vector_Smart_Object-3.png" alt="Logo lorem">
-
                         </div>
                     </div>
                 </div>
 
                
             </div>
+        </div>
+
+        <div class="expert-design">
+
+            <div class="text-center py-5">
+                <p class="pt-5 text-white fs-3">Expert Design Advice</p>
+                <p class="text-white my-fs-10">TRENDING DESIGN NEWS</p>
+                <hr class="text-white pb-5 hr-small">
+            </div>  
+
+            <!-- INSERIRE UN NUOVO COMPONENT DA QUI -->
+            
+                <div class="container-fluid bg-dark">
+                    <div class="row">
+
+                        <div class="col-4">
+                            <img src="../../src/assets/img/blog3-featured.jpg" alt="">
+                            <h3 class="p-3 text-danger">
+                                ciaone
+                            </h3>
+                            
+                        </div>
+                        <div class="col-4">
+                            <img src="../../src/assets/img/blog3-featured.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img src="../../src/assets/img/blog3-featured.jpg" alt="">
+                        </div>
+                    </div>
+
+
+                </div>
+
+            <!-- A QUI -->
+        </div>
+
+        <div class="work-together text-center container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-8">
+
+                    <p class="pt-5 fs-3">Let's Work Together</p>
+                    <p class="my-fs-10 color-light">TELL ME MORE ABOUT YOUR PROJECT</p>
+                    <hr class="pb-5 hr-medium">   
+
+                    <p class="my-fs-10 color-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ratione a, aut voluptates nulla magnam fuga nobis? Dolore, eos cum. Deleniti voluptates esse odit doloremque praesentium, velit nemo aliquam voluptate.</p>
+                </div>
+            </div>
+
+
+
+
         </div>
 
 
@@ -123,10 +171,9 @@ export default {
     }
     .hr-small {
         width: 60px;
-        height: 10px;
         margin: auto;
         font-weight: bolder;
-        border-top: 3px solid white;
+        border-top: 2px solid white;
     }
 
     .work-with-me {
@@ -187,5 +234,15 @@ export default {
 
     .quotes p {
         font-size: 12px;
+    }
+    .expert-design {
+        background-color:#49629B ;
+    }
+
+    .hr-medium {
+        width: 90px;
+        margin: auto;
+        font-weight: bolder;
+        border-top: 2px solid #737E8B;
     }
 </style>

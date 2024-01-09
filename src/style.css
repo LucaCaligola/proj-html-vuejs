@@ -11,3 +11,17 @@
   font-size: 10px;
 }
 
+.color-light {
+  color: #737e8bd6;
+}
+
+
+.row {
+  padding-left: 0px;
+  padding-right: 0px;
+
+}
+
+.col-4 img {
+  width: 100%;
+}
