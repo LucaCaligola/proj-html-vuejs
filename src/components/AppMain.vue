@@ -55,19 +55,58 @@
         </div>
 
         <div class="recent-work text-center">
+            <div class="bg-green">
+                <p class="pt-5 text-white fs-3">Why work with me</p>
+                <p class="text-white my-fs-10">WEB • BRANDING • UX/UI</p>
+                <hr class="text-white pb-5 hr-small">
+            </div>
+            <div class="bg-red container-fluid">
+                <div class="row p-0">
+                    <div class="col-6 p-0 position">
+                        <div class="img-container">
+                            <img src="../../src/assets/img/portfolio1_featured_item-1200x960.jpg" alt="foto dei lavori recenti 1" class="img-hover w-100">
+                            <p class="nome-brand">Brand Name</p>
+                        </div>
+                    </div>
+                    <div class="col-6 p-0">
+                        <div class="img-container">
+                            <img src="../../src/assets/img/portfolio5_featured_item-1200x960.jpg" alt="foto dei lavoti recenti 2" class="img-hover w-100">
+                            <p class="nome-brand">Brand Name</p>
+                        </div>
+                    </div>
+                </div>
 
-            <p class="pt-5 text-white fs-3">Why work with me</p>
-            <p class="text-white my-fs-10">WEB • BRANDING • UX/UI</p>
-            <hr class="text-white pb-5 hr-small">
+                <div class="row">
+                    <div class="col-6 p-0">
+                        <div class="img-container">
+                            <img src="../../src/assets/img/portfolio4_featured_item-1200x960.jpg" alt="foto dei lavoti recenti 3" class="img-hover w-100">
+                            <p class="nome-brand">Brand Name</p>
+                        </div>
+                    </div>
+                    <div class="col-6 p-0">
+                        <div class="img-container">
+                            <img src="../../src/assets/img/portfolio3_featured_item-1200x960.jpg" alt="foto dei lavoti recenti 4" class="img-hover w-100">
+                            <p class="nome-brand">Brand Name</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 p-0">
+                        <div class="img-container">
+                            <img src="../../src/assets/img/portfolio2_featured_item-1200x960.jpg" alt="foto dei lavoti recenti 5" class="img-hover w-100">
+                            <p class="nome-brand">Brand Name</p>
+                        </div>
+                    </div>
+                    <div class="col-6 p-0">
+                        <div class="img-container">
+                            <img src="../../src/assets/img/portfolio6_featured_item-1200x960.jpg" alt="foto dei lavoti recenti 6" class="img-hover w-100">
+                            <p class="nome-brand">Brand Name</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-            <img src="../../src/assets/img/portfolio1_featured_item-1200x960.jpg" alt="foto dei lavoti recenti 1">
-            <img src="../../src/assets/img/portfolio5_featured_item-1200x960.jpg" alt="foto dei lavoti recenti 2">
-            <img src="../../src/assets/img/portfolio4_featured_item-1200x960.jpg" alt="foto dei lavoti recenti 3">
-            <img src="../../src/assets/img/portfolio3_featured_item-1200x960.jpg" alt="foto dei lavoti recenti 4">
-            <img src="../../src/assets/img/portfolio2_featured_item-1200x960.jpg" alt="foto dei lavoti recenti 5">
-            <img src="../../src/assets/img/portfolio6_featured_item-1200x960.jpg" alt="foto dei lavoti recenti 6">
-
-            <div class="text-center bg-red my-fs-10 text-white py-4">VIEW ALL MY WORK</div>
+            <div class="text-center bg-red py-4 text-hover">VIEW ALL MY WORK</div>
 
         </div>
 
@@ -281,7 +320,7 @@ export default {
     .col-3 p {
         font-size: 10px;
     }
-    .recent-work {
+    .bg-green {
         background-color: #96C577;
     }
     .recent-work img {
@@ -332,9 +371,69 @@ export default {
 
         display: flex;
         justify-content: center;
-        flex-wrap: nowrap;
+        flex-wrap: nowrap; 
+    }
+/* 
+    .img-hover:hover {
+        background-color: #F8225A;
+        opacity: 0.2;
         
         
     }
-   
+
+    .nome-brand {
+        display: none;
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        
+    }
+
+    .nome-brand:hover {
+        display: inline-block;
+    }
+
+    .position {
+        position: relative;
+    } */
+
+
+
+    .img-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.img-hover {
+    transition: opacity 0.3s;
+}
+
+.img-container:hover .img-hover {
+    opacity: 0.3;
+}
+
+.nome-brand {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.img-container:hover .nome-brand {
+    opacity: 1;
+}
+
+.text-hover{
+    color: white;
+}
+
+.text-hover:hover {
+background-color: white;
+transition: 0.3s;
+color:#F8225A;
+}
 </style>
