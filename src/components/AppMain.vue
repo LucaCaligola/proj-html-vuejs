@@ -136,25 +136,36 @@
 
         <div class="work-together text-center container">
             <div class="row d-flex justify-content-center">
-                <div class="col-8">
+                <div class="col-6">
 
                     <p class="pt-5 fs-3">Let's Work Together</p>
                     <p class="my-fs-10 color-light">TELL ME MORE ABOUT YOUR PROJECT</p>
                     <hr class="pb-5 hr-medium">   
 
                     <p class="my-fs-10 color-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ratione a, aut voluptates nulla magnam fuga nobis? Dolore, eos cum. Deleniti voluptates esse odit doloremque praesentium, velit nemo aliquam voluptate.</p>
+
+
+                    <form class="pb-5">
+                        <fieldset disabled>
+                            
+                            <div class="m-3">
+                                <input type="text" id="name" class="form-control" placeholder="NAME*" style="border-radius: 0;">
+                            </div>
+
+                            <div class="m-3">
+                                <input type="text" id="email" class="form-control" placeholder="EMAIL*" style="border-radius: 0;">
+                            </div>
+
+                            <div class="m-3">
+                                <input type="text" id="phone" class="form-control no-rounded" placeholder="PHONE*" style="border-radius: 0;">
+                            </div>
+                           
+                            <button type="submit" class=" btn-primary bottone text-white">LET'S TALK</button>
+                        </fieldset>
+                    </form>
                 </div>
             </div>
-
-
-
-
         </div>
-
-
-
-
-
     </main>
 </template>
 <script>
@@ -245,4 +256,15 @@ export default {
         font-weight: bolder;
         border-top: 2px solid #737E8B;
     }
+
+    .bottone {
+        padding: 10px 12px;
+        background-color: #F9225B;
+        border: none;
+    }
+    input .no-rounded {
+        border-radius: 0; /* Imposta il bordo arrotondato a 0 per rimuoverlo */
+    }
+
+   
 </style>
