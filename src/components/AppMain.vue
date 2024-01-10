@@ -113,17 +113,17 @@
                 <div class="container-fluid bg-dark">
                     <div class="row">
 
-                        <div class="col-4">
+                        <div class="col-4 p-0">
                             <img src="../../src/assets/img/blog3-featured.jpg" alt="">
                             <h3 class="p-3 text-danger">
                                 ciaone
                             </h3>
                             
                         </div>
-                        <div class="col-4">
+                        <div class="col-4 p-0">
                             <img src="../../src/assets/img/blog3-featured.jpg" alt="">
                         </div>
-                        <div class="col-4">
+                        <div class="col-4 p-0">
                             <img src="../../src/assets/img/blog3-featured.jpg" alt="">
                         </div>
                     </div>
@@ -157,7 +157,7 @@
                             </div>
 
                             <div class="m-3">
-                                <input type="text" id="phone" class="form-control no-rounded" placeholder="PHONE*" style="border-radius: 0;">
+                                <input type="text" id="phone" class="form-control" placeholder="PHONE*" style="border-radius: 0;">
                             </div>
                            
                             <button type="submit" class=" btn-primary bottone text-white">LET'S TALK</button>
