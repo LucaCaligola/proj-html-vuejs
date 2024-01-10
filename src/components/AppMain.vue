@@ -75,11 +75,16 @@
         
             <div class="container">
                 <div class="row text-center d-flex justify-content-center">
-                    <div class="col-9">
-
-                        <p class="text-center pt-5 my-fs-big">"</p>
-                        <p class="text-white fst-italic">"That's been one of my mantras - focus and simplicity. Since can be harder than complex;you have to work hard to get your thinking clean to make it simple."</p>
-                        <p class="text-white my-fs-10">STEVE JOBS - APPLE</p>
+                    <div class="col-12">
+                        <div v-for="(quote, index) in quotes" :key="index" :class="{ active: index === currentIndex }" class="carousel-item">
+                            <div class="row text-center d-flex justify-content-center">
+                                <div class="col-9">
+                                    <p class="text-center pt-5 my-fs-big">"</p>
+                                    <p class="text-white fst-italic">{{ quote.text }}</p>
+                                    <p class="text-white my-fs-10">{{ quote.author }}</p>
+                                </div>
+                            </div>    
+                        </div>
                     </div>
                 </div>
 
@@ -163,9 +168,9 @@ export default {
     components: {
         DynamicAppNews
     },
-
     data() {
         return {
+            currentIndex: 0,
             newsList: [
                     {
                         src: "../../src/assets/img/blog3-featured.jpg",
@@ -187,13 +192,49 @@ export default {
                     },
                     
                 ],
+
+        
+            quotes: [
+                    { 
+                        text: "That's been one of my mantras - focus and simplicity. Since can be harder than complex; you have to work hard to get your thinking clean to make it simple.", 
+                        author: "STEVE JOBS - APPLE" 
+                    },
+
+                    { 
+                        text: "When something is important enough, you do it even if the odds are not in your favor.", 
+                        author: "ELON MUSK - TESLA X" 
+                    },
+                    { 
+                        text: "The biggest risk is not taking any risk.", 
+                        author: "MARK ZUCKERBERG - FACEBOOK, INSTAGRAM" 
+                    },
+
+                    { 
+                        text: "The Web as I envisaged it, we have not seen it yet. The future is still so much bigger than the past.", 
+                        author: "TIM BERNERS-LEE" 
+                    }
+
+                     ],
+                
         }
     },
 
+    mounted() {
+        this.startCarousel();
+            },
+
+     methods: {
+        startCarousel() {
+        setInterval(() => {
+        this.currentIndex = (this.currentIndex + 1) % this.quotes.length;
+      }, 5000);
+    },
+  },
 
     
 }
 </script>
+
 <style>
     .about-me {
         height: 100%;
