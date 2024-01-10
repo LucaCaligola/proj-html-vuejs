@@ -33,11 +33,12 @@
     </footer>
 </template>
 <script>
+
 export default {
     
 }
 </script>
-<style>
+<style scoped>
 
 footer {
     background-color: #1C2028;

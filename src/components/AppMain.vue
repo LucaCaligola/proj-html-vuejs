@@ -109,28 +109,15 @@
             </div>  
 
             <!-- INSERIRE UN NUOVO COMPONENT DA QUI -->
+            <section class="news">
+
             
-                <div class="container-fluid bg-dark">
-                    <div class="row">
-
-                        <div class="col-4 p-0">
-                            <img src="../../src/assets/img/blog3-featured.jpg" alt="">
-                            <h3 class="p-3 text-danger">
-                                ciaone
-                            </h3>
-                            
-                        </div>
-                        <div class="col-4 p-0">
-                            <img src="../../src/assets/img/blog3-featured.jpg" alt="">
-                        </div>
-                        <div class="col-4 p-0">
-                            <img src="../../src/assets/img/blog3-featured.jpg" alt="">
-                        </div>
-                    </div>
-
-
-                </div>
-
+                <DynamicAppNews v-for="news in newsList" 
+                :imageSrc="news.src"
+                :title="news.titolo"
+                :text="news.text"
+                />
+            </section>   
             <!-- A QUI -->
         </div>
 
@@ -169,7 +156,41 @@
     </main>
 </template>
 <script>
+
+import DynamicAppNews from './DynamicAppNews.vue';
+
 export default {
+    components: {
+        DynamicAppNews
+    },
+
+    data() {
+        return {
+            newsList: [
+                    {
+                        src: "../../src/assets/img/blog3-featured.jpg",
+                        titolo: "Live The Design Process",
+                        text: "What's to come next? Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud", 
+                        
+                    },
+                    {
+                        src: "../../src/assets/img/blog2-featured.jpg",
+                        titolo: "What's Next Of The App Store",
+                        text: "What's to come next? Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud",
+    
+                    },
+                    {
+                        src: "../../src/assets/img/blog1-featured.jpg",
+                        titolo: "The Humble Wood Desk",
+                        text: "What's to come next? Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud",
+                       
+                    },
+                    
+                ],
+        }
+    },
+
+
     
 }
 </script>
@@ -266,5 +287,13 @@ export default {
         border-radius: 0; /* Imposta il bordo arrotondato a 0 per rimuoverlo */
     }
 
+    .news {
+
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+        
+        
+    }
    
 </style>
